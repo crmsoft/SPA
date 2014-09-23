@@ -1,0 +1,156 @@
+body {
+  background: #DFDFDD;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  background: url(../images/back.jpg);
+  background-repeat: none;
+  background-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+#nav-container{
+    margin-top: 50px;
+    z-index: 99;
+    position: absolute;
+}
+ul{
+  padding: 0;
+  list-style-type: none;
+}
+ul li { margin-bottom: 1px; }
+ul li a
+{
+  text-decoration: none;
+  padding: .6em 1em;
+  border-radius: 19px;
+  color: #999;
+  font-size: 21px;
+  width: 110px;
+  transition: background-color 1s ease;
+  display: block;
+}
+ul li a:hover
+{
+  color: #ffa;
+  background-color: rgba(11,22,33,.3);
+}
+.activemenuitem{
+  color: #ffa;
+  background-color: rgba(11,22,33,.3);
+}
+.logo-holder{
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  z-index: 99;
+  float: right;
+  right: 40px;
+  top: 40px;
+}
+.logo{
+  background: background: -webkit-radial-gradient(white 5%, rgb(163, 244, 163) 15%, rgb(156, 156, 199) 60%); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(white 5%, rgb(163, 244, 163) 15%, rgb(156, 156, 199) 60%); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(white 5%, rgb(163, 244, 163) 15%, rgb(156, 156, 199) 60%); /* For Firefox 3.6-15 */
+  background: radial-gradient(white 5%, rgb(163, 244, 163) 15%, rgb(156, 156, 199) 60%); /* Standard synta; */
+  color: gray;
+  display: block;
+  transform: rotate(-45deg);
+  margin-top: -10px;
+}
+.logo-back{
+  width: 100%;
+  height: 100%;
+  -moz-animation: spin 4s infinite;
+  -o-animation: spin 4s infinite;
+  -ms-animation: spin 4s infinite;
+  -webkit-animation-name: spin; 
+  -webkit-animation-duration: 4s; 
+  -webkit-animation-iteration-count: infinite;
+  animation-name: spin; 
+  animation-duration: 4s; 
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes spin {
+    from   {
+            -webkit-transform: rotateY(360deg); 
+    }
+    to {
+          -webkit-transform: rotateY(0deg);
+    }
+}
+@-moz-keyframes spin {
+    from   {transform: rotateY(0deg)}
+    to     {transform: rotateY(360deg)}
+}
+@keyframes spin {
+    from {transform: rotateY(0deg)}
+    to   {transform: rotateY(360deg)}
+}
+.logo-romb{
+  width: 100%;
+  height: 75px;
+  padding-top: 75px;
+  background: rgba(114,22,113,0.2);
+  -moz-transform: rotate(45deg) ;
+  -webkit-transform: rotate(45deg) ;
+  -o-transform: rotate(45deg) ;
+  transform: rotate(45deg) ;
+}
+.big{
+  background: rgba(128, 128, 128, 0.23);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top:0;
+
+}
+.my-thumb{
+  display: inline-block;
+  height: 180px;
+  overflow: hidden;
+}
+div.col-thumb{
+  width: 250px;
+  float: left;
+  margin-right: 5px;
+}
+div.all-jobs{
+  margin-left: 20%;
+  margin-top: 35px;
+}
+.hand{
+  cursor:pointer;
+}
+div.big-thumb{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -280px;
+  padding: 10px;
+  background:white;
+}
+div.big-thumb img{
+  width: 450px;
+  height: 350px;
+}
+div.big-thumb{
+  max-width: 450px;
+}
+.hidden{
+  display: none;
+}
+div.content-right{
+  padding-left: 350px;
+  padding-top: 25px;
+  margin-right: 150px;
+  width: 650px;
+}
+div.content-self{
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+}
